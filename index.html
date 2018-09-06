@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>gish es6 generator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://nicholasgish.com/css/reset.css">
+
+  <style>
+    h1 {
+      font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+      font-size: 0.6vw;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin: 2vw 3vw;
+      border: 1px solid rgba(0, 0, 0, 0.141);
+      padding: 1vw;
+      text-align: center;
+      width: 8vw;
+      box-shadow: 0 0 20px rgba(158, 158, 158, 0.478);
+    }
+
+    h1+span {
+      font-family: Gill Sans;
+      font-size: 0.5vw;
+      border: 1px solid red;
+      color: #fff;
+      background-color: red;
+      text-transform: uppercase;
+      padding: 0.5vw;
+      letter-spacing: 1px;
+      position: absolute;
+      top: 2.5vw;
+      left: 12vw;
+      opacity: 0;
+      transition: 0.2s ease-out;
+      transform: translate3d(-1vw, 0, 0)
+    }
+
+    h1:hover~span {
+      opacity: 1;
+      transform: translate3d(0vw, 0, 0)
+    }
+
+    p:nth-of-type(1) {
+      padding: 3vw 3vw 0;
+      font-size: 1.5vw;
+    }
+
+    .q {
+      font-size: 3vw;
+      padding: 3vw;
+      opacity: 0;
+      transition: 2s
+    }
+
+    .pieHolder {
+      background-image: url(https://res.cloudinary.com/dt7oesi98/image/upload/v1536255688/pecanpie_wwkuxd.jpg);
+      transform: translate3d(0, -1vw, 0);
+      position: absolute;
+      top: 22vw;
+      left: 0;
+      width: 100vw;
+      height: 26vw;
+      z-index: -1;
+      background-repeat: no-repeat;
+      border-bottom: 1px solid #8f3b1f;
+      opacity: 0;
+      transition: 2.7s ease-out;
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <h1>es6 Generator</h1><span>That's not a button, and neither is this.</span>
+
+  <p>Get ready for a question</p>
+
+  <p class="q"></p>
+  <div class="pieHolder"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.9.1/polyfill.min.js"></script>
+  <script src="js/gen.js"></script>
+</body>
+
+</html>
