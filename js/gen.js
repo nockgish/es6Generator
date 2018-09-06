@@ -12,7 +12,7 @@ const thirdOne = () => {
   const pieSlice = document.querySelector('.pieHolder');
     setTimeout(() => {
       qPlace.innerHTML = newOneToo.slice(-1)[0].question;
-      qPlace.style.cssText = "opacity: 1";
+      qPlace.style.cssText = "opacity: 1; transform: translate3d(0, 2vw, 0)";
       pieSlice.style.cssText = "opacity: 1; transform: translate3d(0, 0, 0)";
     }, 1000);
 };
